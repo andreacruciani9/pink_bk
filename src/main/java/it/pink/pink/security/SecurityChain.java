@@ -28,7 +28,7 @@ public class SecurityChain {
 
     CorsConfigurationSource configurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:58865"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:58150999"));
         configuration.addAllowedHeader("*");
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT","OPTIONS", "PATCH", "DELETE"));
         configuration.setAllowCredentials(true);
